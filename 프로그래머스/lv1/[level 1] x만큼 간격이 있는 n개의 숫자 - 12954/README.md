@@ -18,3 +18,21 @@ https://school.programmers.co.kr/learn/courses/30/lessons/12954
 | 2   | 5   | [2,4,6,8,10] |
 | 4   | 3   | [4,8,12]     |
 | -4  | 2   | [-4, -8]     |
+
+### 다른 사람의 풀이
+
+#### 1.
+
+function solution(x, n) {
+var answer = [];
+for (let i = 1; i <= n; i++) {
+answer.push(x\*i)
+}
+return answer;
+}
+
+#### 2.
+
+function solution(x, n) {
+return Array(n).fill(x).map((v, i) => (i + 1) \* v)
+}

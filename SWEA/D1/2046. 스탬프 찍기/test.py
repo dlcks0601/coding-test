@@ -1,3 +1,5 @@
+# 조건 추가
+
 import sys
 sys.stdin = open("input.txt", "r")
 

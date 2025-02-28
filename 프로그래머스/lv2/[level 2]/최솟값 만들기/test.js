@@ -7,7 +7,3 @@ function solution(A, B) {
   }
   return sum;
 }
-
-// 테스트 실행
-console.log(solution([1, 4, 2], [5, 4, 4])); // 29
-console.log(solution([1, 2], [3, 4])); // 10

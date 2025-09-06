@@ -1,13 +1,13 @@
-// 문자열 다루기 기본
 function solution(s) {
-  if (s.length !== 4 && s.length !== 6) {
-    return false;
-  }
-
-  for (const char of s) {
-    if (isNaN(char)) {
-      return false;
+    if (s.length !== 4 && s.length !== 6 ) {
+        return false;
     }
-  }
-  return true;
+    const array = s.split("");
+    console.log(array);
+    for (let i = 0; i<array.length; i++) {
+        if(isNaN(array[i])) {
+            return false;
+        }
+    } 
+    return true;
 }

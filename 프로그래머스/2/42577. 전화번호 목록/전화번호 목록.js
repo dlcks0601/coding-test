@@ -1,12 +1,12 @@
 function solution(phone_book) {
-    const set = new Set(phone_book)
+    const set  = new Set(phone_book)
     for (const number of phone_book) {
-        for (let i = 0; i<number.length; i++) {
+        for (let i = 0 ; i<number.length; i++) {
             const prefix = number.slice(0,i);
-            if ( set.has(prefix)) {
+            if (set.has(prefix)) {
                 return false;
             }
         }
     }
-    return true
+    return true;
 }
